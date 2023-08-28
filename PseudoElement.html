@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .image{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: rgba(1, 7, 0, 0.455);
+
+        }
+        .image::before{
+            background-image: url("pexels-alex-fu-1302436.jpg");
+            background-size: contain;
+            content:"" ;
+            position:absolute;
+            inset: 0;
+            opacity: 0.5;
+            
+
+        }
+    </style>
+    <title>PseudoElement</title>
+</head>
+<body>
+    <div class="image">
+    <h1 style="color: red; position: relative;">THIS IS TEXT</h1>
+    
+    </div>
+    
+</body>
+</html>
